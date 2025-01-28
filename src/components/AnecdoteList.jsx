@@ -4,7 +4,7 @@ import { voteAnecdote } from "../reducers/anecdoteReducer";
 const AnecdoteList = () => {
   const dispatch = useDispatch();
   const anecdotes = useSelector((state) =>
-    [...state].sort((a, b) => b.votes - a.votes) // Lajitellaan äänimäärän mukaan
+    [...state].sort((a, b) => b.votes - a.votes) // Järjestetään äänimäärän mukaan
   );
 
   return (
